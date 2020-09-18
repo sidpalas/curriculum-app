@@ -29,3 +29,15 @@ npm run test:unit
 ```
 npm run test:e2e
 ```
+
+---
+
+### Build container locally (run from project root)
+```
+docker build -t curriculum-front . --file ./curriculum-front/Dockerfile
+```
+
+### Run container locally
+```
+docker run -d -p 8080:8080 curriculum-front
+```
