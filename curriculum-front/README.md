@@ -39,5 +39,5 @@ docker build -t curriculum-front . --file ./curriculum-front/Dockerfile
 
 ### Run container locally
 ```
-docker run -d -p 8080:8080 curriculum-front
+docker run -d -p 8080:80 curriculum-front
 ```

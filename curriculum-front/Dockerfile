@@ -9,7 +9,7 @@ RUN ls -l
 RUN npm run build
 
 # Use nginx image to serve the static files
-# (and eventually proxy to the backend too!)
+# (and proxy to the back-end too!)
 FROM nginx:1.18
 WORKDIR /usr/share/nginx/html
 COPY --from=node-builder /usr/src/app/dist .
